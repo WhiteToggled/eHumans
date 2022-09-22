@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+/* Variables */
+  :root {
+    --boxShadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4);
+    --transitions: all .5s ease-in-out;
+  }
+
 /* .....
 General Styling
 ..... */
@@ -18,11 +24,23 @@ body {
   margin: 20px;
   background-color: #222;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Heading */
+.heading {
+  margin: 0;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+  padding-top: 6rem;
+  box-shadow: var(--boxShadow);
 }
 
 /* Cards styling */
 
 .container {
+  padding-top: 5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -70,17 +88,45 @@ body {
 .card p + p {
   text-indent: 20px;
 }
+
+/* Card Emojis */
+
+.card-image {
+  position: relative;
+}
+.role {
+  font-size: 45px;
+  padding: .5rem;
+  position: absolute;
+  bottom: -17%;
+  left: 36%;
+  border-radius: 50%;
+  box-shadow: var(--boxShadow);
+}
+/* Card Animations */
+.description {
+  display: none;
+}
+.card:hover .description {
+  display: block;
+  transition: all .1s ease-in-out;
+}
+
+.card:hover .role{
+  display: none;
+  transition: var(--transitions);
+}
 /* All the Cards */
 
 
-.bluish {
+.card1 {
   background-image:  linear-gradient(45deg,  #0707a3, #086414);
 }
 
-.orange {
+.card2 {
   background-image: url(https://source.unsplash.com/rDEOVtE7vOs);
 }
 
-.toggled {
+.card3 {
   background-image: url(https://source.unsplash.com/c_GmwfHBDzk);
 }

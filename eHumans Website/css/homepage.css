@@ -1,10 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+	--DropShadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4)
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
 /* General Styling */
  body {
     margin: 0;
     padding: 0;
-    height: 400vh;
+	scroll-behavior: smooth;
+ }
+
+ /* Utility Classes */
+
+ .alternate {
+	background-color: rgb(27, 27, 27);
+	color: whitesmoke;
  }
 
  .container {
@@ -15,6 +33,15 @@
    filter: brightness(.9);
    overflow: hidden;
    transform: translateY(-100px);
+ }
+
+ /*  */
+
+ .main-text {
+	max-width: 60ch;
+	padding: 15rem;
+	font: 1.5em "Roboto", sans-serif;
+	font-weight: bold;
  }
 
 
@@ -30,8 +57,8 @@
     height: 100px;
     padding: 0 5%;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: var(--DropShadow);
  }
 
  nav .logo {
@@ -45,6 +72,11 @@
 }
  nav .logo a {
     text-decoration: none;
+ }
+
+ nav .logo a:hover, 
+ nav .logo a:focus {
+	text-shadow: 0 8px 10px rgba(75, 75, 75, 0.4) ;
  }
 
 
@@ -67,7 +99,7 @@ nav .links {
     display: block;
     padding: 1em;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 900;
     color: black;
     text-decoration: none;
  }
@@ -100,7 +132,33 @@ nav .icon-burger .line {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
+
+/* Sections  */
+
+
+
+.sections {
+	transform: translateY(-10rem);
+	height: 70vh;
+	width: auto;
+	padding: 10rem 10rem 5rem 10rem;
+	font: 1.2em 'Roboto', sans-serif;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	border-bottom: 2px solid black;
+}
+
+
+
+
+/*...............
+     BREAKPOINTS
+.................. */
+
 @media screen and (max-width: 768px) {
+
+
 	nav .logo {
 		float: none;
 		width: auto;
@@ -142,5 +200,28 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
+
+	.container p {
+		padding: 15rem 5rem 5rem 5rem;
+		font-size: 1.25em;
+	}
+
+	.sections {
+		padding: 0 5rem 0 5rem;
+		font-size: 1.25em;
+	}
+
 	
+}
+
+
+@media screen and (max-width: 576px) {
+
+	.container p {
+		padding: 15rem 2rem 2rem 2rem;
+	}
+	
+	.sections {
+		padding: 0 2rem 0 2rem;
+	}
 }

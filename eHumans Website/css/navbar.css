@@ -1,53 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-:root {
-	--DropShadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4)
-}
-
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-/* General Styling */
- body {
-    margin: 0;
-    padding: 0;
-	scroll-behavior: smooth;
- }
-
- /* Utility Classes */
-
- .alternate {
-	background-color: rgb(27, 27, 27);
-	color: whitesmoke;
- }
-
- .container {
-   height: 1080px;
-   background-image: url(../images/background-image.jpg);
-   background-size: cover;
-   background-position: fixed;
-   filter: brightness(.9);
-   overflow: hidden;
-   transform: translateY(-100px);
- }
-
- /*  */
-
- .main-text {
-	max-width: 60ch;
-	padding: 15rem;
-	font: 1.5em "Roboto", sans-serif;
-	font-weight: bold;
- }
-
-
- /* navbar */
-
- nav {
+nav {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -199,29 +150,5 @@ nav .icon-burger .line {
 	}
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
-	}
-
-	.container p {
-		padding: 15rem 5rem 5rem 5rem;
-		font-size: 1.25em;
-	}
-
-	.sections {
-		padding: 0 5rem 0 5rem;
-		font-size: 1.25em;
-	}
-
-	
-}
-
-
-@media screen and (max-width: 576px) {
-
-	.container p {
-		padding: 15rem 2rem 2rem 2rem;
-	}
-	
-	.sections {
-		padding: 0 2rem 0 2rem;
 	}
 }
