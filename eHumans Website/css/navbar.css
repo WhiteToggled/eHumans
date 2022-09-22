@@ -15,7 +15,6 @@
  body {
     margin: 0;
     padding: 0;
-    height: 400vh;
 	scroll-behavior: smooth;
  }
 
@@ -138,27 +137,19 @@ nav .icon-burger .line {
 
 
 
-#about {
+.sections {
 	transform: translateY(-10rem);
 	height: 70vh;
 	width: auto;
-	padding: 10rem 10rem 0 10rem;
+	padding: 10rem 10rem 5rem 10rem;
 	font: 1.2em 'Roboto', sans-serif;
 	display: flex;
+	align-items: center;
 	gap: 2rem;
 	border-bottom: 2px solid black;
 }
 
-#join-now {
-	transform: translateY(-10rem);
-	height: 70vh;
-	width: auto;
-	padding: 10rem 10rem 0 10rem;
-	font: 1.2em 'Roboto', sans-serif;
-	display: flex;
-	gap: 2rem;
-	border-bottom: 2px solid black;
-}
+
 
 
 /*...............
@@ -215,16 +206,10 @@ nav .icon-burger .line {
 		font-size: 1.25em;
 	}
 
-	#about {
+	.sections {
 		padding: 0 5rem 0 5rem;
 		font-size: 1.25em;
 	}
-
-	#join-now {
-		padding: 0 5rem 0 5rem;
-		font-size: 1.25em;
-	}
-
 
 	
 }
@@ -236,12 +221,7 @@ nav .icon-burger .line {
 		padding: 15rem 2rem 2rem 2rem;
 	}
 	
-	#about {
+	.sections {
 		padding: 0 2rem 0 2rem;
 	}
-
-	#join-now {
-		padding: 0 2rem 0 2rem;
-	}
-
 }
