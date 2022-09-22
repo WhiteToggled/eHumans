@@ -5,12 +5,25 @@
 	--DropShadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4)
 }
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 /* General Styling */
  body {
     margin: 0;
     padding: 0;
     height: 400vh;
 	scroll-behavior: smooth;
+ }
+
+ /* Utility Classes */
+
+ .alternate {
+	background-color: rgb(27, 27, 27);
+	color: whitesmoke;
  }
 
  .container {
@@ -23,7 +36,9 @@
    transform: translateY(-100px);
  }
 
- .container p {
+ /*  */
+
+ .main-text {
 	max-width: 60ch;
 	padding: 15rem;
 	font: 1.5em "Roboto", sans-serif;
@@ -119,12 +134,33 @@ nav .icon-burger .line {
 	transition: all .3s ease-in-out;
 }
 
-section {
-	padding: 0 10rem 0 10rem;
+/* Sections  */
+
+
+
+#about {
+	transform: translateY(-10rem);
+	height: 70vh;
+	width: auto;
+	padding: 10rem 10rem 0 10rem;
 	font: 1.2em 'Roboto', sans-serif;
 	display: flex;
 	gap: 2rem;
+	border-bottom: 2px solid black;
 }
+
+#join-now {
+	transform: translateY(-10rem);
+	height: 70vh;
+	width: auto;
+	padding: 10rem 10rem 0 10rem;
+	font: 1.2em 'Roboto', sans-serif;
+	display: flex;
+	gap: 2rem;
+	border-bottom: 2px solid black;
+}
+
+
 /*...............
      BREAKPOINTS
 .................. */
@@ -179,10 +215,17 @@ section {
 		font-size: 1.25em;
 	}
 
-	section {
+	#about {
 		padding: 0 5rem 0 5rem;
 		font-size: 1.25em;
 	}
+
+	#join-now {
+		padding: 0 5rem 0 5rem;
+		font-size: 1.25em;
+	}
+
+
 	
 }
 
@@ -193,7 +236,11 @@ section {
 		padding: 15rem 2rem 2rem 2rem;
 	}
 	
-	section {
+	#about {
+		padding: 0 2rem 0 2rem;
+	}
+
+	#join-now {
 		padding: 0 2rem 0 2rem;
 	}
 
