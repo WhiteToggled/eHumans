@@ -19,12 +19,13 @@
 /* .....
 General Styling
 ..... */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 20px;
   background-color: #222;
   font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
 }
 
 /* Heading */
