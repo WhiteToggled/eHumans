@@ -38,6 +38,49 @@ body {
   box-shadow: var(--boxShadow);
 }
 
+
+/* nav menu */
+
+.staff-list {
+  padding: .4rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: .4rem;
+  border: 1px solid whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: 0 8px 10px -2px rgba(255, 255, 255, 0.185);
+}
+
+:where(.staff-list a:any-link) {
+  padding: 0.5rem;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.staff-list a:hover, .staff a:focus {
+  transform: skew(-5deg);
+    color: #7d3e8f;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: all .1s ease;
+}
+
+.admin {
+  color: skyblue;
+}
+
+.mod {
+  color: #5163cb;
+}
+
+.helper {
+  color: lightgreen;
+}
+
+
+
 /* Cards styling */
 
 .container {
