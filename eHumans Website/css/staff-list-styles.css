@@ -253,3 +253,13 @@ body {
   background-position-y: -80px;
 }
 
+
+/* BREAKPOINTS */
+
+
+@media screen and (max-width: 1200px) {
+  .staff-list {
+    display: none;
+  }
+  
+}

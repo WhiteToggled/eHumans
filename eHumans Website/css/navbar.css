@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 nav {
     position: fixed;
     z-index: 10;
     left: 0;
     right: 0;
     top: 0;
-
+    background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(50px);
+	-webkit-backdrop-filter: blur(50px);
     height: 100px;
     padding: 0 5%;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: var(--DropShadow);
  }
+ 
 
  nav .logo {
     float: left;
