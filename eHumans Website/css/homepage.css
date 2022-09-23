@@ -16,6 +16,7 @@ html {
 	scroll-behavior: smooth;
 }
  body {
+	background-color: rgba(0, 0, 0, .1);
     margin: 0;
     padding: 0;
  }
@@ -52,7 +53,7 @@ html {
  .main-text {
 	max-width: 60ch;
 	padding: 15rem;
-	font: 1.5em "Roboto", sans-serif;
+	font: 2em "Roboto", sans-serif;
 	font-weight: bold;
  }
 
@@ -170,10 +171,46 @@ nav .icon-burger .line {
 	border-radius: 50%;
 }
 
-#join-now h1 {
+.sections  h1 {
 	padding: 1rem;
 	text-align: center;
 }
+
+#discord {
+	background-color: 	rgba(114, 137, 218, .5);
+}
+
+#discord h1 {
+	font-weight: 900;
+}
+/* Buttons */
+
+.btn-container {
+	display: flex;
+	justify-content: flex-start;
+	padding: 5rem;
+	gap: 2rem;
+}
+
+.buttons:any-link {
+	box-shadow: var(--DropShadow);
+	font-weight: bolder;
+	font-size: 1.25rem;
+	background-color: black;
+	color: white;
+	padding: 1rem;
+	display: block;
+	text-decoration: none;
+	border: 3px solid white;
+	border-radius: 1rem;
+}
+
+.buttons:hover, .buttons:focus {
+	color: #333;
+	background-color: #7289da;
+	transition: all .2s ease-in-out;
+}
+
 
 
 /* Footer */
@@ -235,9 +272,9 @@ nav .icon-burger .line {
 		opacity: 0;
 	}
 
-	.container p {
+	.main-text {
 		padding: 15rem 5rem 5rem 5rem;
-		font-size: 1.25em;
+		font-size: 1.75em;
 	}
 
 	.sections {
@@ -269,5 +306,13 @@ nav .icon-burger .line {
 
 	.footer {
 		padding: 0 3rem 1.5rem 3rem;
+	}
+
+	.btn-container {
+		display: inline-block;
+	}
+	
+	.buttons {
+		margin-bottom: 1rem;
 	}
 }

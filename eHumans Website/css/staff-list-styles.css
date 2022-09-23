@@ -33,7 +33,7 @@ body {
   margin: 0;
   color: white;
   text-align: center;
-  padding: .5rem;
+  padding: 1rem;
   padding-top: 6rem;
   box-shadow: var(--boxShadow);
 }
@@ -57,9 +57,9 @@ body {
 
 .card:hover, .card:focus {
   background-color: #333;
-  color: white;
   cursor: pointer;
-  transform: scale(1.03);
+  color: white;
+  transform: scale(1.05);
   border: 2px solid white;
   transition: 0.1s ease;
 }
@@ -117,9 +117,18 @@ body {
   display: none;
   transition: var(--transitions);
 }
+
+/* Extra Cards */
+
+.extra {
+  padding: 0;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
 /* All the Cards */
 
-
+/* STAFF  */
 .card1 {
   background-image:  linear-gradient(45deg,  #0707a3, #086414);
 }
@@ -131,3 +140,26 @@ body {
 .card3 {
   background-image: url(https://source.unsplash.com/c_GmwfHBDzk);
 }
+
+.card13 {
+  background-color: white;
+  background-image: url(../images/odqnger.png);
+  background-size: 80%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-position-y: -20px;
+}
+
+
+/* BONUS */
+
+
+.card14 {
+  background-color: black;
+}
+
+.card15 {
+  background-image: url(../images/Gaizai.png);
+  background-position-y: -80px;
+}
+
