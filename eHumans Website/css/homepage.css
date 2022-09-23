@@ -146,7 +146,13 @@ nav .icon-burger .line {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
-	border-bottom: 2px solid black;
+}
+
+/* Footer */
+
+.footer {
+	margin: 0;
+	padding: 0 10rem 3rem 10rem;
 }
 
 
@@ -211,6 +217,10 @@ nav .icon-burger .line {
 		font-size: 1.25em;
 	}
 
+	.footer {
+		padding: 0 5rem 2rem 5rem;
+	}
+
 	
 }
 
@@ -223,5 +233,9 @@ nav .icon-burger .line {
 	
 	.sections {
 		padding: 0 2rem 0 2rem;
+	}
+
+	.footer {
+		padding: 0 3rem 1.5rem 3rem;
 	}
 }
