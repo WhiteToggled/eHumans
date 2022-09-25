@@ -63,7 +63,7 @@ nav .links {
  nav .links a:hover,
  nav .links a:focus {
    transform: skew(-5deg);
-    color: #7d3e8f;
+    color: #0e193d;
     background-color: rgba(0, 0, 0, 0.05);
     transition: all .1s ease;
  }
