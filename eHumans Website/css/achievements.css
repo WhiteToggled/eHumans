@@ -42,15 +42,6 @@ body {
     gap: 3rem;
 }
 
-.images p {
-    padding: 1rem 0 2rem 0;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
 .images img {
     width: 80vw;
-}
-
-.images:nth-child(even) {
 }
