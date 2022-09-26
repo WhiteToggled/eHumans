@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 
 /* Reset */
@@ -16,32 +17,107 @@ html {
 
 :root {
     --boxShadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4);
-    --transitions: all .5s ease-in-out;
+    --transitions: all .15s ease-in-out;
   }
 
    /* General Styling */
 
 
 body {
+    min-height: 150vh;
     color: whitesmoke;
     background-color: #222;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* .. */
 
-
-.heading h1 {
-    padding: 10rem 8rem;
-}
-
-.images {
-    padding: 2rem 0 0 0;
-    background-color: rgba(21, 29, 109, 0.13);
-    overflow: hidden;
+.container {
+    margin: 10rem 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 3rem;
+    text-align: center;
 }
 
-.images img {
-    width: 80vw;
+.container .heading {
+    padding-bottom: 50px;
+}
+
+.container .heading h3 {
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid #fff;
+}
+
+.container .heading h3 span {
+    font-weight: 100;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.container .box .card {
+    position: relative;
+}
+
+.container .box img {
+    border: 3px solid white;
+    margin-bottom: 2rem;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.container .box p {
+    font-size: 20px;
+    display: none;
+}
+.container .box img:hover {
+    transform: scale(105%);
+    filter: brightness(.66);
+    transition: all .3s ease-in-out;
+}
+
+.container .box img:hover + p {
+    display: block;
+}
+
+.container .box img:active {
+    filter: none;
+    width: 80%;
+    transition: all .5s ease-in-out;
+}
+
+
+/* ......
+BREAKPOINTS
+.... */
+
+
+@media screen and (max-width: 768px) {
+    .container .heading p{
+        display: none;
+    }
+    .container .box img {
+        width: 80%;
+    }
+
+    .container .box img:active {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container .box img {
+        width: 90%;
+    }
+
+    .container .box img:active {
+        width: 95%;
+    }
 }

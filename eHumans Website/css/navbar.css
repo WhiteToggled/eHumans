@@ -98,25 +98,6 @@ nav .icon-burger .line {
 	transition: all .3s ease-in-out;
 }
 
-/* Sections  */
-
-
-
-.sections {
-	transform: translateY(-10rem);
-	height: 70vh;
-	width: auto;
-	padding: 10rem 10rem 5rem 10rem;
-	font: 1.2em 'Roboto', sans-serif;
-	display: flex;
-	align-items: center;
-	gap: 2rem;
-	border-bottom: 2px solid black;
-}
-
-
-
-
 /*...............
      BREAKPOINTS
 .................. */
