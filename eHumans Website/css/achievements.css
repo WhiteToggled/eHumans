@@ -55,6 +55,10 @@ body {
     font-weight: 100;
 }
 
+.container .heading p {
+    color: rgb(165, 158, 158);
+}
+
 .container .box {
     display: flex;
     flex-direction: column;
@@ -93,6 +97,13 @@ body {
     transition: all .5s ease-in-out;
 }
 
+/* Footer */
+
+.footer {
+	margin: 0;
+	padding: 3rem 10rem 3rem 10rem;
+  font-family: 'Times New Roman', sans-serif;
+}
 
 /* ......
 BREAKPOINTS
@@ -102,6 +113,10 @@ BREAKPOINTS
 @media screen and (max-width: 768px) {
     .container .heading p{
         display: none;
+    }
+
+    .container .card p {
+        display: block;
     }
     .container .box img {
         width: 80%;

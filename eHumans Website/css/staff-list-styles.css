@@ -253,6 +253,15 @@ body {
   background-position-y: -80px;
 }
 
+/* Footer */
+
+.footer {
+	margin: 0;
+	padding: 3rem 10rem 3rem 10rem;
+  color: white;
+  font-family: 'Times New Roman', sans-serif;
+}
+
 
 /* BREAKPOINTS */
 

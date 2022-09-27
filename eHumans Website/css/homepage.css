@@ -70,8 +70,8 @@ html {
     padding: 0 5%;
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(50px);
-	-webkit-backdrop-filter: blur(50px);
+	backdrop-filter: blur(130px);
+	-webkit-backdrop-filter: blur(130px);
     box-shadow: var(--DropShadow);
  }
 
@@ -164,10 +164,11 @@ nav .icon-burger .line {
 #about {
 	background-color: rgba(0, 0, 0, 0.1);
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 }
 
 #about img {
+	box-shadow: var(--DropShadow);
 	min-width: 20vw;
 	border-radius: 50%;
 }
