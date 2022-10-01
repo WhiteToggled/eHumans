@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /*.......
    RESET
@@ -11,10 +11,10 @@
 }
 
 /* Variables */
-  :root {
-    --boxShadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4);
-    --transitions: all .5s ease-in-out;
-  }
+:root {
+  --boxShadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4);
+  --transitions: all 0.5s ease-in-out;
+}
 
 /* .....
 General Styling
@@ -25,7 +25,7 @@ html {
 body {
   margin: 20px;
   background-color: #222;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Heading */
@@ -38,13 +38,12 @@ body {
   box-shadow: var(--boxShadow);
 }
 
-
 /* nav menu */
 
 .staff-list {
-  padding: .4rem;
+  padding: 0.4rem;
   background-color: rgb(0, 0, 0);
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   border: 1px solid whitesmoke;
   display: flex;
   flex-wrap: wrap;
@@ -60,11 +59,12 @@ body {
   text-decoration: none;
 }
 
-.staff-list a:hover, .staff a:focus {
+.staff-list a:hover,
+.staff a:focus {
   transform: skew(-5deg);
-    color: #7d3e8f;
-    background-color: rgba(0, 0, 0, 0.05);
-    transition: all .1s ease;
+  color: #7d3e8f;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all 0.1s ease;
 }
 
 .admin {
@@ -78,8 +78,6 @@ body {
 .helper {
   color: lightgreen;
 }
-
-
 
 /* Cards styling */
 
@@ -98,7 +96,8 @@ body {
   border-radius: 15px;
 }
 
-.card:hover, .card:focus {
+.card:hover,
+.card:focus {
   background-color: #333;
   cursor: pointer;
   color: white;
@@ -115,7 +114,7 @@ body {
   background-color: aqua;
   height: 150px;
   margin-bottom: 15px;
-/*border-bottom: 1px solid rgba(0, 0, 0, 0.664);*/
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.664);*/
   box-shadow: 0 8px 5px -2px #88888898;
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
@@ -125,7 +124,8 @@ body {
   text-align: center;
 }
 
-.card h2, .card p {
+.card h2,
+.card p {
   padding: 10px;
 }
 
@@ -140,7 +140,7 @@ body {
 }
 .role {
   font-size: 45px;
-  padding: .5rem;
+  padding: 0.5rem;
   position: absolute;
   bottom: -17%;
   left: 36%;
@@ -153,10 +153,10 @@ body {
 }
 .card:hover .description {
   display: block;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
-.card:hover .role{
+.card:hover .role {
   display: none;
   transition: var(--transitions);
 }
@@ -173,7 +173,7 @@ body {
 
 /* STAFF  */
 .card1 {
-  background-image:  linear-gradient(45deg,  #0707a3, #086414);
+  background-image: linear-gradient(45deg, #0707a3, #086414);
 }
 
 .card2 {
@@ -189,13 +189,13 @@ body {
 }
 
 .card4 {
-  background-position: 5px;
-  background-image: url(../images/Larvi.png);
+  background-position: 0;
+  background-image: url(../images/SuvirWasFound.png);
 }
 
 .card5 {
-  background-image: url(../images/SuvirWasFound.png);
-  background-position: 0;
+  background-image: url(../images/Larvi.png);
+  background-position: 5px;
 }
 
 .card6 {
@@ -256,19 +256,16 @@ body {
 /* Footer */
 
 .footer {
-	margin: 0;
-	padding: 3rem 10rem 3rem 10rem;
+  margin: 0;
+  padding: 3rem 10rem 3rem 10rem;
   color: white;
-  font-family: 'Times New Roman', sans-serif;
+  font-family: "Times New Roman", sans-serif;
 }
 
-
 /* BREAKPOINTS */
-
 
 @media screen and (max-width: 1200px) {
   .staff-list {
     display: none;
   }
-  
 }
