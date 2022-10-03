@@ -1,138 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
 /* Reset */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 /* Variables */
 
 :root {
-    --boxShadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4);
-    --transitions: all .15s ease-in-out;
-  }
+  --boxShadow: 0 8px 10px -2px rgba(75, 75, 75, 0.4);
+  --transitions: all 0.15s ease-in-out;
+}
 
-   /* General Styling */
-
+/* General Styling */
 
 body {
-    min-height: 150vh;
-    color: whitesmoke;
-    background-color: #222;
-    font-family: 'Poppins', sans-serif;
+  min-height: 150vh;
+  color: whitesmoke;
+  background-color: #222;
+  font-family: "Poppins", sans-serif;
 }
 
 /* .. */
 
 .container {
-    margin: 10rem 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  margin: 10rem 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .container .heading {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .container .heading h3 {
-    font-size: 3em;
-    font-weight: bolder;
-    border-bottom: 3px solid #fff;
+  font-size: 3em;
+  font-weight: bolder;
+  border-bottom: 3px solid #fff;
 }
 
 .container .heading h3 span {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .container .heading p {
-    color: rgb(165, 158, 158);
+  color: rgb(165, 158, 158);
 }
 
 .container .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .container .box .card {
-    position: relative;
+  position: relative;
 }
 
 .container .box img {
-    border: 3px solid white;
-    margin-bottom: 2rem;
-    width: 60%;
-    border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid white;
+  margin-bottom: 2rem;
+  width: 60%;
+  border-radius: 10px;
 }
 
 .container .box p {
-    font-size: 20px;
-    display: none;
+  font-size: 20px;
+  display: none;
 }
 .container .box img:hover {
-    transform: scale(105%);
-    filter: brightness(.66);
-    transition: all .3s ease-in-out;
+  transform: scale(105%);
+  filter: brightness(0.66);
+  transition: all 0.3s ease-in-out;
 }
 
 .container .box img:hover + p {
-    display: block;
+  display: block;
 }
 
 .container .box img:active {
-    filter: none;
-    width: 80%;
-    transition: all .5s ease-in-out;
+  filter: none;
+  width: 80%;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Footer */
 
 .footer {
-	margin: 0;
-	padding: 3rem 10rem 3rem 10rem;
-  font-family: 'Times New Roman', sans-serif;
+  margin: 0;
+  padding: 3rem 10rem 3rem 10rem;
+  font-family: "Times New Roman", sans-serif;
 }
 
 /* ......
 BREAKPOINTS
 .... */
 
-
 @media screen and (max-width: 768px) {
-    .container .heading p{
-        display: none;
-    }
+  .container .heading p {
+    display: none;
+  }
 
-    .container .card p {
-        display: block;
-    }
-    .container .box img {
-        width: 80%;
-    }
+  .container .card p {
+    display: block;
+  }
+  .container .box img {
+    width: 80%;
+  }
 
-    .container .box img:active {
-        width: 90%;
-    }
+  .container .box img:active {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .container .box img {
-        width: 90%;
-    }
+  .container .box img {
+    width: 90%;
+  }
 
-    .container .box img:active {
-        width: 95%;
-    }
+  .container .box img:active {
+    width: 95%;
+  }
 }
