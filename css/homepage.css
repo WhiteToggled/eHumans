@@ -167,6 +167,31 @@ nav .icon-burger .line {
   transition: all 0.3s ease-in-out;
 }
 
+.lvl25-image {
+  display: flex;
+  margin: 0 auto 1rem;
+  width: 16rem;
+  border: 3px solid black;
+  border-radius: 50px;
+  outline: 4px solid purple;
+  transform: rotate(-5deg);
+  transition: scale 0.2s ease-in-out;
+}
+
+.lvl25-image:hover {
+  scale: 105%;
+}
+
+.lvl25-image + p {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  padding: 0 2em;
+  font-size: 1.5em;
+  max-width: 50ch;
+  transform: rotate(-5deg);
+}
+
 /* Sections  */
 
 .sections {
@@ -307,6 +332,10 @@ nav .icon-burger .line {
 
   .footer {
     padding: 0 5rem 2rem 5rem;
+  }
+
+  .lvl25-image + p {
+    display: none;
   }
 }
 
