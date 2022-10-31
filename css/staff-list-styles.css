@@ -253,6 +253,10 @@ body {
   background-position-y: -80px;
 }
 
+.card16 {
+  background-image: url(../images/Grxyson.jpg);
+}
+
 /* Footer */
 
 .footer {
